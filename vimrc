@@ -6,14 +6,17 @@
 " ===================================================================
 set nocompatible                       " 必要設定
 filetype off                           " 必要設定
-" set rtp+=~/.vim/bundle/vundle/         " 設定套件安裝路徑
-" call vundle#rc()                       " 開始管理套件
-" Plugin 'gmarik/vundle'                 " Vundle Base 套件
+set rtp+=~/.vim/bundle/Vundle.vim      " 設定套件安裝路徑
+call vundle#begin()                    " 開始管理套件
+
+Plugin 'gmarik/Vundle.vim'             " Vundle Base 套件
+
 " 個人使用的套件放這裡 Start
-" Plugin 'mattn/emmet-vim'               " emmet 套件
+Plugin 'mattn/emmet-vim'               " emmet 套件
+
 " 個人使用的套件放這裡 End
-" call vundle#end()                      " 結束套件管理
-filetype plugin on                     " 必要設定 
+call vundle#end()                      " 結束套件管理
+
 filetype plugin indent on              " 必要設定
 " ===================================================================
 " 編輯環境設定
