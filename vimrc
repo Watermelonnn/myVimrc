@@ -72,10 +72,3 @@ let g:user_emmet_expandabbr_key='<Tab>'
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " 這是寫入檔案時置放 EOL(end of line) 的形式
 set ffs=unix,dos ff=unix
-
-" powerline
-set laststatus=2
-set t_Co=256
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
