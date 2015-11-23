@@ -36,7 +36,7 @@ set ruler                               " 狀態列顯示狀態
 set showcmd                             " 在狀態列顯示目前執行指令
 set showmode                            " 顯示目前模式
 set history=50                          " 命令歷史紀錄檔紀錄長度
-set autochdir                           " 自動切換成當前目錄
+" set autochdir                           " 自動切換成當前目錄
 set t_Co=256                            " 設定終端機顏色為256色
 " ==========
 " 游標控制
