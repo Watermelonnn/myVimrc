@@ -22,8 +22,10 @@ filetype plugin indent on              " 必要設定
 " 配色設定
 " ==========
 syntax enable                           " 開啟語法顏色支援
+syntax on                               " 開啟語法支援
 set background=dark                     " 設定背景為深色
-colorscheme torte                       " 內建配色                   
+colorscheme torte                       " 內建配色
+highlight Comment ctermfg=LightCyan     " 修改註解顏色為淺色，方便閱讀
 " ==========
 " 基本設定
 " ========== 
@@ -36,12 +38,11 @@ set ruler                               " 狀態列顯示狀態
 set showcmd                             " 在狀態列顯示目前執行指令
 set showmode                            " 顯示目前模式
 set history=50                          " 命令歷史紀錄檔紀錄長度
-" set autochdir                           " 自動切換成當前目錄
 set t_Co=256                            " 設定終端機顏色為256色
 " ==========
 " 游標控制
 " ==========
-set cursorline                         " 高亮度顯示當前列
+set cursorline                          " 高亮度顯示當前列
 set cursorcolumn                        " 高亮度顯示當前行
 " ==========
 " 縮排設定
@@ -52,7 +53,7 @@ set smartindent                         " 設定智慧型縮排
 set expandtab                           " 使用空白來取代 tab
 set tabstop=2                           " 自訂縮排長度
 set shiftwidth=2                        " 設定移動整行一次移動的寬度
-set wrap
+set wrap                                " 設定換行
 " ==========
 " 關鍵字搜尋
 " ==========
